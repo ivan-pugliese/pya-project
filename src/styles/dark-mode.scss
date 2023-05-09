@@ -1,0 +1,26 @@
+/* ****************************** Dark mode ****************************** */
+
+.dark-theme {
+  background-color: var(--black-dark-theme-color);
+  color: var(--color-black-pearl-0);
+}
+
+.dark-theme-shadow {
+  box-shadow: 5px 4px 4px -1px var(--color-green-pya-600);
+}
+
+.dark-theme-features {
+  border-top: 3px solid var(--color-green-pya-600);
+  border-bottom: 3px solid var(--color-green-pya-600);
+  background-color: var(--black-dark-theme-color);
+  color: var(--color-black-pearl-0);
+}
+
+.paragraph-dark-theme{
+  color: var(--black-dark-theme-color);
+}
+
+.border-top-dark-theme {
+  width: 100%;
+  border-top: 1px solid var(--color-black-pearl-100);
+}

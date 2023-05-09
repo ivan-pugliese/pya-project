@@ -1,0 +1,565 @@
+/********** Header **********/
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 1.3rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--color-black-pearl-100);
+  background-color: var(--color-black-pearl-0);
+}
+
+.client-info {
+  display: none;
+}
+
+.dark-theme-btn-desktop {
+  display: none;
+}
+
+/********** Logo **********/
+
+.logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font);
+  font-size: 25px;
+  color: var(--color-green-pya-900);
+  transition: transform 0.2s;
+}
+
+.logo a:hover {
+  transform: scale(1.1);
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/*** Mobile-nav ***/
+
+.navigation-mobile {
+  position: sticky;
+  bottom: 0;
+  height: 60px;
+  background-color: var(--color-black-pearl-0);
+  border-top: 1px solid var(--color-black-pearl-100);
+}
+
+.btns-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns-container button {
+  border: none;
+  font-size: 20px;
+}
+
+.menu-btn {
+  fill: var(--color-green-pya-900);
+  cursor: pointer;
+}
+
+.mobile-nav {
+  position: fixed;
+  left: 0;
+  top: 128px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  border-top: 1px solid var(--color-black-pearl-100);
+  border-bottom: 1px solid var(--color-black-pearl-100);
+  background-color: var(--color-black-pearl-0);
+  transition: opacity 0.5s ease;
+}
+
+.nav-ul {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-ul li {
+  list-style-type: none;
+}
+
+.nav-ul li > a {
+  color: var(--color-gray-200);
+}
+
+.menu-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dark-theme-btn {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/********** Insurance-types-desktop **********/
+
+.insurance-types {
+  margin-top: 1rem;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.insurance-types a {
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: var(--font);
+  border-radius: 0.5rem;
+  color: var(--color-black-pearl-0);
+  background-color: var(--color-green-pya-900);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.insurance-types a:hover {
+  transform: scale(1.1);
+}
+
+/********** Insurance-section **********/
+
+.insurance {
+  padding: 1rem;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.insurance-name span {
+  color: var(--color-gray-200);
+}
+
+.insurance h1 {
+  text-align: center;
+  color: var(--color-green-pya-900);
+}
+
+.insurance-p1 {
+  font-weight: bold;
+  color: var(--color-green-pya-200);
+}
+
+.insurance-p2 {
+  font-size: 15px;
+  color: var(--color-black-pearl-600);
+}
+
+.insurance-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/********** Insurance-form **********/
+
+.form {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.86);
+  border-radius: 0.5rem;
+  background-color: var(--color-green-pya-600);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.form-group input,
+select, textarea {
+  font-family: "Inter", sans-serif;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-black-pearl-0);
+}
+
+.form-group select {
+  padding: 8px;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-black-pearl-0);
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-black-pearl-0);
+  resize: none;
+}
+
+.form-personal-dates,
+.form-insurance-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form button {
+  margin-top: 8px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--color-black-pearl-0);
+  background-color: var(--color-green-pya-900);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.form button:hover {
+  transform: scale(1.1);
+}
+
+.form button > span {
+  font-size: 18px;
+}
+
+/********** Insurance-companies-cards **********/
+
+.cards-container {
+  padding: 1rem;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 250px;
+  height: 120px;
+  padding: 0 1.2rem;
+  border-radius: 0.5rem;
+  background-color: var(--white-color);
+  box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.86);
+}
+
+.cards img {
+  object-fit: contain;
+  width: 100%;
+  height: 120px;
+  border-radius: 0.5rem;
+}
+
+/********** Steps **********/
+
+.steps h2 {
+  margin-top: 1rem;
+  color: var(--color-green-pya-900);
+}
+
+.steps {
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--color-gray-400);
+}
+
+.steps-items-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.step-item span,
+.step-item h3 {
+  color: var(--color-green-pya-900);
+}
+
+.step-item span {
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  border: 1px solid var(--color-green-pya-900);
+  border-radius: 50%;
+}
+
+.step-item strong {
+  color: var(--color-green-pya-900);
+}
+
+/********** Compare-insurance **********/
+
+.compare-insurance-container {
+  padding: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.compare-insurance-container h2 {
+  margin-top: 2rem;
+  color: var(--color-green-pya-900);
+}
+
+.compare-insurance {
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.compare-insurance h2 {
+  color: var(--color-green-pya-900);
+}
+
+.compare-insurance a {
+  width: 200px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-green-pya-900);
+  border: 1px solid var(--color-gray-200);
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.compare-insurance a > span {
+  font-size: 3rem;
+}
+
+.compare-insurance a > h3 {
+  color: var(--color-gray-200);
+}
+
+.compare-insurance a:hover {
+  background-color: var(--color-gray-400);
+}
+
+/********** Clients **********/
+
+.clients {
+  padding: 1rem;
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--color-gray-400);
+}
+
+.clients h2 {
+  color: var(--color-green-pya-900);
+}
+
+.opinions-container {
+  max-width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 3rem;
+}
+
+.opinion {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.opinion img {
+  width: 150px;
+}
+
+/********** Footer **********/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-logo-social {
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-black-pearl-0);
+  background-color: var(--color-green-pya-900);
+}
+
+.logo-footer {
+  color: var(--color-black-pearl-0);
+}
+
+.logo-footer span {
+  font-size: 23px;
+}
+
+.social-media a {
+  color: var(--color-black-pearl-0);
+  font-size: 23px;
+}
+
+.footer-info {
+  padding: 1rem;
+}
+
+/********** Legal-page **********/
+
+.terms, .politics {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 0.5rem;
+  background-color: var(--color-gray-400);
+}
+
+.terms h2 {
+  color: var(--color-green-pya-900);
+}
+
+.politics h2, h3 {
+  color: var(--color-green-pya-900);
+}
+
+/********** Support-client-page **********/
+
+.support {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 0.5rem;
+  background-color: var(--color-green-pya-600);
+  box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.86);
+}
+
+.support img {
+  margin-bottom: 1rem;
+  width: 200px;
+}
+
+.support-social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.support-social-media a {
+  padding: 5px;
+  font-weight: bold;
+  color: var(--color-black-pearl-0);
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-green-pya-900);
+  background-color: var(--color-green-pya-900);
+  transition: all 0.2s;
+}
+
+.support-social-media a:hover {
+  color: var(--color-green-pya-600);
+  background-color: var(--color-gray-400);
+}
+
+/********** About-page **********/
+
+.about {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-radius: 0.5rem;
+  background-color: var(--color-gray-400);
+  box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.86);
+}
+
+.about img {
+  width: 300px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

@@ -1,0 +1,191 @@
+@media screen and (min-width: 798px) {
+
+  /********** Header **********/
+
+  .header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .client-info {
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .client-info a {
+    color: var(--color-gray-200);
+    transition: all 0.2s;
+  }
+
+  .client-info a:hover {
+    transform: scale(1.1);
+    color: var(--color-green-pya-900);
+  }
+
+  .dark-theme-btn-desktop {
+    display: block;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /********** Insurance-section **********/
+
+  .insurance-name span {
+    font-size: 22px;
+  }
+
+  .insurance h1 {
+    font-size: 33px;
+  }
+
+  .insurance-types {
+    display: flex;
+  }
+
+  .insurance-p1 {
+    width: 1000px;
+    font-size: 20px;
+  }
+
+  .insurance-p2 {
+    font-size: 19px;
+  }
+
+  /********** Insurance-form **********/
+
+  .form {
+    padding-top: 1.5rem;
+    width: 700px;
+    gap: 25px;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 320px;
+  }
+
+  .form-personal-dates,
+  .form-insurance-dates {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .form button {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 15px;
+    align-self: center;
+    width: 500px;
+  }
+
+  .form-group textarea {
+    width: 500px;
+  }
+
+  /*** Mobile-nav ***/
+
+  .navigation-mobile {
+    display: none;
+  }
+
+  /********** Steps **********/
+
+  .steps {
+    padding: 4rem;
+  }
+
+  .steps h2 {
+    font-size: 28px;
+  }
+
+  .steps p {
+    font-size: 18px;
+  }
+
+  /********** Compare-insurance **********/
+
+  .compare-insurance-container h2 {
+    font-size: 28px;
+  }
+
+  /********** Clients **********/
+
+  .clients {
+    padding: 5rem;
+  }
+
+  .clients h2 {
+    font-size: 28px;
+  }
+
+  /********** Footer **********/
+
+  .logo-footer span {
+    font-size: 28px;
+  }
+
+  .social-media a {
+    font-size: 25px;
+  }
+
+  .footer-logo-social {
+    padding: 3rem;
+  }
+
+  .footer-logo-social span {
+    font-size: 28px;
+  }
+
+  .footer-info {
+    width: 800px;
+  }
+
+
+  .dark-theme-btn {
+    display: block;
+  }
+
+  /********** Footer **********/
+
+  .terms h2, .politics h2 {
+    font-size: 28px;
+  }
+
+  .terms p, .politics p {
+    font-size: 18px;
+  }
+
+
+  /********** Support-client-page **********/
+
+  .support {
+    width: 700px;
+  }
+
+  .support img {
+    width: 250px;
+  }
+
+ /********** About-page **********/
+
+  .about {
+    flex-direction: row;
+  }
+
+  .about p {
+    font-size: 18px;
+  }
+
+  .about img {
+    width: 200px;
+  }
+
+}
+
