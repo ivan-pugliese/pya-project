@@ -26,6 +26,7 @@ function darkTheme(btn) {
   const selectors1 = document.querySelectorAll("[data-dark]");
   const selectors2 = document.querySelectorAll("[data-dark-features]");
   const selectors3 = document.querySelectorAll("[data-dark-shadow]");
+  const containters = document.querySelectorAll("[data-dark-border-top]");
 
   let moon = "🌙";
   let sun = "☀️";
@@ -34,6 +35,7 @@ function darkTheme(btn) {
     selectors1.forEach((el) => el.classList.remove("dark-theme"));
     selectors2.forEach((el) => el.classList.remove("dark-theme-features"));
     selectors3.forEach((el) => el.classList.remove("dark-theme-shadow"));
+    containters.forEach((el) => el.classList.remove("border-top-dark-theme-p"));
     themeBtn.textContent = moon;
     localStorage.setItem("theme", "light");
   };
@@ -42,6 +44,7 @@ function darkTheme(btn) {
     selectors1.forEach((el) => el.classList.add("dark-theme"));
     selectors2.forEach((el) => el.classList.add("dark-theme-features"));
     selectors3.forEach((el) => el.classList.add("dark-theme-shadow"));
+    containters.forEach((el) => el.classList.add("border-top-dark-theme-p"));
     themeBtn.textContent = sun;
     localStorage.setItem("theme", "dark");
   };

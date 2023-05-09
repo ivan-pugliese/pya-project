@@ -352,7 +352,7 @@ select, textarea {
 }
 
 .compare-insurance-container h2 {
-  margin-top: 2rem;
+  
   color: var(--color-green-pya-900);
 }
 
@@ -416,6 +416,7 @@ select, textarea {
   max-width: 1200px;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
   gap: 3rem;
 }
