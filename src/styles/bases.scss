@@ -69,7 +69,7 @@
 .mobile-nav {
   position: fixed;
   left: 0;
-  top: 128px;
+  bottom: 60px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -352,7 +352,6 @@ select, textarea {
 }
 
 .compare-insurance-container h2 {
-  
   color: var(--color-green-pya-900);
 }
 
